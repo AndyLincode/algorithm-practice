@@ -45,3 +45,5 @@ function minSum(arr, size) {
 
 console.log(maxSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3)); // 12
 console.log(minSum([2, 7, 3, 0, 6, 1, -5, -12, -11], 3)); // -28
+
+// O(n^2)
