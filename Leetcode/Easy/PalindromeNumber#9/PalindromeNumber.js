@@ -21,16 +21,16 @@
 // }
 // console.log(reverseNumber(12345));
 function PalindromeNumber(number) {
-    if (number < 0 || (number !== 0 && number % 10 === 0)) {
-        return false;
-    }
-    var reversed = 0;
-    var original = number;
-    while (number !== 0) {
-        reversed = reversed * 10 + (number % 10);
-        number = Math.floor(number / 10);
-    }
-    return reversed === original;
+  if (number < 0 || (number !== 0 && number % 10 === 0)) {
+    return false;
+  }
+  let reversed = 0;
+  let original = number;
+  while (number !== 0) {
+    reversed = reversed * 10 + (number % 10);
+    number = Math.floor(number / 10);
+  }
+  return reversed === original;
 }
 console.log(PalindromeNumber(121));
 console.log(PalindromeNumber(-121));

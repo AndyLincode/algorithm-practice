@@ -4,7 +4,7 @@
 // sameFrequency(“abba”, “abab”) true
 // sameFrequency(“aasdebasdf”, ”adfeebed”) false
 
-function sameFrequency(letter1: String, letter2: String): boolean {
+function sameFrequency1(letter1: String, letter2: String): boolean {
   let arr1 = letter1.split("");
   let arr2 = letter2.split("");
   let counter1: Record<string, number> = {};
@@ -30,4 +30,4 @@ function sameFrequency(letter1: String, letter2: String): boolean {
   return true;
 }
 
-console.log(sameFrequency("aabbc", "abbac"));
+console.log(sameFrequency1("aabbc", "abbac"));
